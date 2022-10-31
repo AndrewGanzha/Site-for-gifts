@@ -52,12 +52,14 @@ body {
     border-radius: 5px;
     font-size: 18px;
     line-height: 22px;
+    cursor: pointer;
 }
 
 .button-header{
     margin-right: 35px;
     transition: all 0.3s;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button-header:hover{
@@ -114,6 +116,7 @@ main{
     color: #fff;
     border: 0px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .second-screen{
