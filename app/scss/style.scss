@@ -1,0 +1,174 @@
+@import "variables.scss";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-black{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-header{
+    padding-left: 80px;
+}
+
+.header-menu{
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.header-menu li{
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.header-menu li:nth-child(n){
+    padding-right: none;
+}
+
+.button-transparent{
+    border: 1px solid $orange;
+    background-color: white;
+    color: $orange;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.button-header{
+    margin-right: 35px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.button-header:hover{
+    border: 1px solid $grey;
+    color: $grey;
+}
+
+
+main{
+    margin-top: 35px;
+}
+
+.main{
+    &-screen{
+        display: flex;
+    }
+    &-image{
+        width: 720px;
+    }
+    &-textbox{
+        background-color: #F1F1F2;
+        display: flex;
+        width: 720px;
+        height: 700px;
+        align-items: center;
+        &_title{
+            font-weight: 800;
+            font-size: 56px;
+        }
+        &_wrapper{
+            width: 430px;
+            margin: 0 auto; 
+        }
+    }
+}
+
+.first-textbox_title {
+    font-size: 50px;
+}
+
+
+.textbox_descr {
+    font-size: 20px;
+    padding: 35px 0px 50px 0px;
+}
+
+.button-fill{
+    background-color: $orange;
+    width: 200px;
+    height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 0px;
+    font-size: 18px;
+}
+
+.second-screen{
+    display: flex;
+}
+
+
+.second-textbox_title {
+    font-size: 32px;
+}
+
+.button-content{
+    border-radius: 0px;
+    width: 200px;
+    height: 60px;
+    text-transform: uppercase;
+}
+
+.carousel{
+    text-align: center;
+    margin-top: 100px;
+    &-title{
+        font-size: 32px;
+        font-weight: 800px;
+    }
+    &-desc{
+        font-size: 18px;
+    }
+    &-wrapper{
+        margin-top: 65px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        &_item{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.carousel-wrapper_item{
+    margin-right: 30px;
+}
+
+.carousel-item_text{
+    a {
+        text-decoration: none;
+    }
+    text-align: left;
+    padding-left: 25px;
+}
+
+.carousel-item_title{
+    font-size: 20px;
+}
+
+
+@import "media.scss";
