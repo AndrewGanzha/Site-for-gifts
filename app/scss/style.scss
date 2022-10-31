@@ -11,11 +11,11 @@ body {
     margin: 0 auto;
 }
 
-.header{
+.menu{
     display: flex;
-    padding-top: 40px;
     align-items: center;
     justify-content: space-around;
+    padding-top: 40px;
 }
 
 .logo-black{
@@ -37,6 +37,10 @@ body {
 .header-menu li{
     padding-right: 30px;
     cursor: pointer;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .header-menu li:nth-child(n){
@@ -173,5 +177,19 @@ main{
     font-size: 20px;
 }
 
+.menu{
+    nav{
+        display: flex;
+        ul{
+        display: flex;
+        flex-direction: row;
+        }
+        li{
+            list-style-type: none;
+            text-decoration: none;
+            padding: 15px;
+        }
+    }
+}
 
 @import "media.scss";

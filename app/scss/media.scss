@@ -1,3 +1,89 @@
-@media all and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-btn {
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
 
+    .menu-btn span{
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $orange;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(2){
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3){
+        top: calc(50% + 5px);
+    }
+
+    .menu{
+        img{
+            padding: 0;
+        }
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $grey;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+        nav{
+            ul{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            li{
+                list-style-type: none;
+                text-decoration: none;
+                padding: 15px;
+            }
+        }
+    }
+
+    .menu.active{
+     transform: translateX(0);   
+    }
+
+    .menu-btn.active span:first-of-type{
+        transform: translateX(100%);
+    }
+
+    .menu-btn.active span:nth-of-type(2){
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .menu-btn.active span:nth-of-type(3){
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .button-header{
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
 }
