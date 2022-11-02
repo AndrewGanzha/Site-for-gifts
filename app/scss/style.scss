@@ -7,7 +7,7 @@ body {
 }
 
 .container{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -74,14 +74,15 @@ body {
 
 main{
     margin-top: 35px;
+    .big-image{
+        width: 720px;
+        height: 700px;
+    }
 }
 
 .main{
     &-screen{
         display: flex;
-    }
-    &-image{
-        width: 720px;
     }
     &-textbox{
         background-color: #F1F1F2;
