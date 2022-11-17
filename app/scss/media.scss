@@ -49,6 +49,9 @@
             height: 700px;
         }
     }
+    .carousel-wrapper_item{
+        padding-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 1137px){
@@ -58,7 +61,7 @@
             align-items: center;
         }
         &-textbox{
-            width: 800px;
+            width: 100%;
             text-align: center;
             height: 700px;
             justify-content: center;
@@ -66,7 +69,7 @@
     }
     main{
         .big-image{
-            width: 800px;
+            width: 100%;
             height: 700px;
             justify-content: center;
         }
@@ -76,16 +79,16 @@
     }
 }
 
+
+
 @media screen and (max-width: 817px){
     .main{
         &-textbox{
-            width: 700px;
             height: 700px;
         }
     }
     main{
         .big-image{
-            width: 700px;
             height: 700px;
         }
     }
@@ -103,7 +106,7 @@
         position: relative;
         z-index: 2;
         overflow: hidden;
-        right: 50%;
+        right: 45%;
     }
 
     .menu-btn span{
@@ -180,7 +183,36 @@
         align-items: center;
         justify-content: center;
     }
-    .services-section{
-        width: 700px;
+    .carousel{
+        &-wrapper{
+            flex-direction: column;
+            &_item{
+                margin-right: 0px;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 75%;
+                    height: 50vh;
+                    object-fit: cover;
+                }
+            }
+        }
+        &-desc{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .carousel{
+        &-desc{
+            font-size: 14px;
+        }
+    }
+    .textbox{
+        &_descr{
+            font-size: 16px;
+            margin: 0 10px;
+        }
     }
 }
