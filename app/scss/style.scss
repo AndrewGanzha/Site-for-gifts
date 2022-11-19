@@ -256,6 +256,18 @@ main{
     }
 }
 
+.blog{
+    margin-top: 90px;
+    text-align: center;
+    &-title{
+        font-size: 32px;
+        font-weight: 800px;
+    }
+    &-desc{
+        font-size: 18px;
+    }
+}
+
 
 
 @import "media.scss";

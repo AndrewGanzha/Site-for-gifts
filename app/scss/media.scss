@@ -79,6 +79,26 @@
     }
 }
 
+@media screen and (max-width: 990px){
+    .promotional{
+        margin-top: 80px;
+        height: 100%;
+        &-buttons{
+            padding-top: 50px;
+            &_black{
+                margin-right: 20px;
+            }
+        }
+        &-content{
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            &_title{
+                padding-top: 40px;
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 817px){
@@ -203,6 +223,18 @@
     }
 }
 
+@media screen and (max-width: 522px){
+    .promotional{
+        &-buttons{
+            text-align: center;
+            &_black{
+                margin-bottom: 20px;
+            }
+        }
+    }
+} 
+    
+
 @media screen and (max-width: 425px) {
     .carousel{
         &-desc{
@@ -213,6 +245,16 @@
         &_descr{
             font-size: 16px;
             margin: 0 10px;
+        }
+    }
+    .promotional{
+        &-content{
+            &_title{
+                font-size: 28px;
+            }
+            &_desc{
+                font-size: 28px;
+            }
         }
     }
 }
