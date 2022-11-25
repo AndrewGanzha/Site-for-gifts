@@ -169,12 +169,9 @@ main{
 }
 
 .carousel-wrapper_item{
-    margin-right: 30px;
+    padding-right: 30px;
 }
 
-.carousel-wrapper_item:last-child{
-    margin-right: 0px;
-}
 
 .carousel-item_text{
     a {
@@ -253,6 +250,85 @@ main{
             cursor: pointer;
             text-transform: uppercase;
         }
+    }
+}
+
+.blog{
+    margin-top: 90px;
+    text-align: center;
+    &-title{
+        font-size: 32px;
+        font-weight: 800px;
+    }
+    &-desc{
+        font-size: 18px;
+    }
+    &-card{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        max-width: 1140px;
+        height: 100%;
+        background-color: #231F20; 
+        margin-top: 70px;
+    }
+}
+
+.card{
+    &-image{
+        width: 400px;
+        height: 340px;
+    }
+    &-pretitle{
+        padding-top: 60px;
+        font-size: 14px;
+    }
+    &-text{
+        font-size: 48px;
+    }
+    &-link{
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+    }
+    &-wrappertext{
+        color: #fff;
+        text-align: left;
+        padding-left: 80px;
+    }
+}
+
+.hints{
+    margin-top: 40px;
+    display: flex;
+    max-width: 1170px;
+    &-card{
+        width: 50%;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    &-card:last-child{
+        margin-right: 0px;
+    }
+    &-card:hover{
+        box-shadow: 10px 5px 5px grey;
+        transition: all 0.5s;
+    }
+    &-title{
+        font-size: 24px;
+        font-weight: bold;
+        height: 68px;
+    }
+    &-text{
+        font-size: 18px;
+    }
+    &-link{
+        display: block;
+        color: #000;    
+        text-decoration: none;
+        font-size: 18px;
+        margin-top: 50px
     }
 }
 
