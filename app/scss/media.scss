@@ -52,6 +52,32 @@
     .carousel-wrapper_item{
         padding-bottom: 40px;
     }
+    .card{
+        &-image{
+            display: none;
+        }
+        &-wrappertext{
+            width: 100%;
+            padding-bottom: 50px;
+        }
+    }
+    .hints{
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        &-card{
+            width: 80%;
+            margin-right: 0px;
+        }
+        &-card:last-child{
+            margin-right: 0px;
+            margin-top: 60px;
+        }
+        &-title{
+            height: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 1137px){
@@ -84,7 +110,7 @@
         margin-top: 80px;
         height: 100%;
         &-buttons{
-            padding-top: 50px;
+            padding: 50px 0px 50px 0px;
             &_black{
                 margin-right: 20px;
             }
@@ -126,7 +152,6 @@
         position: relative;
         z-index: 2;
         overflow: hidden;
-        right: 45%;
     }
 
     .menu-btn span{
@@ -223,13 +248,23 @@
     }
 }
 
-@media screen and (max-width: 522px){
+@media screen and (max-width: 529px){
     .promotional{
         &-buttons{
             text-align: center;
             &_black{
                 margin-bottom: 20px;
+                margin-right: 0px;
             }
+        }
+    }
+    .card{
+        &-wrappertext{
+            width: 100%;
+            padding-left: 30px;
+        }
+        &-text{
+            font-size: 30px;
         }
     }
 } 
