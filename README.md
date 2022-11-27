@@ -3,5 +3,7 @@
 Simple landing
 
 ##Use
---Gulp
---Sass
+- Gulp
+- Sass
+
+Can view: https://andrewganzha.github.io/siteforgifts/
