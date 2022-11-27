@@ -2,7 +2,7 @@
 
 Simple landing
 
-##Use
+## Use
 - Gulp
 - Sass
 
