@@ -232,7 +232,7 @@
         &-wrapper{
             flex-direction: column;
             &_item{
-                margin-right: 0px;
+                padding-right: 0px;
                 align-items: center;
                 justify-content: center;
                 img{
@@ -289,6 +289,20 @@
             }
             &_desc{
                 font-size: 28px;
+            }
+        }
+    }
+    .footer{
+        margin-top: 50px;
+        &-menu{
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            align-items: center;
+            padding: 0;
+            li{
+                padding-bottom: 10px;
+                text-align: center;
             }
         }
     }
