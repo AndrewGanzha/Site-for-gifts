@@ -6,4 +6,4 @@ Simple landing
 - Gulp
 - Sass
 
-Can view: https://andrewganzha.github.io/siteforgifts/
+Can view: https://andrewganzha.github.io/Site-for-gifts/
