@@ -39,7 +39,7 @@ body {
     cursor: pointer;
     a{
         text-decoration: none;
-        color: #000;
+        color: $black;
     }
 }
 
@@ -118,12 +118,17 @@ main{
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: $white;
     border: 0px;
     font-size: 18px;
     cursor: pointer;
 }
 
+.button-fill:hover{
+    background-color: $white;
+    color: $orange;
+    transition: all 0.5s;
+}
 .second-screen{
     display: flex;
 }
@@ -138,6 +143,11 @@ main{
     width: 200px;
     height: 60px;
     text-transform: uppercase;
+}
+.button-content:hover{
+    background-color: $orange;
+    color: $grey;
+    transition: all 0.5s;
 }
 
 .carousel{
@@ -162,7 +172,7 @@ main{
     }
     &-item{
         &_link{
-            color: #000;
+            color: $black;
             font-weight: 800;
         }
     }
@@ -226,22 +236,22 @@ main{
     &-buttons{
         padding-top: 96px;
         &_black{
-            background-color: #000;
+            background-color: $black;
             width: 200px;
             height: 50px;
             text-transform: uppercase;
             text-align: center;
             text-decoration: none;
-            color: #fff;
+            color: $white;
             border: 0px;
             font-size: 18px;
             cursor: pointer;
             border-radius: 5px;
         }
         &_transparent{
-            border: 1px solid #000;
+            border: 1px solid $black;
             background: none;
-            color: #000;
+            color: $black;
             width: 200px;
             height: 50px;
             border-radius: 5px;
@@ -251,6 +261,19 @@ main{
             text-transform: uppercase;
         }
     }
+}
+
+.promotional-buttons_black:hover{
+    color: black;
+    background-color: $white;
+    transition: all 1s;
+}
+
+.promotional-buttons_transparent:hover{
+    color: black;
+    background-color: $white;
+    transition: all 1s;
+    border: 0px;
 }
 
 .blog{
@@ -282,18 +305,23 @@ main{
     &-pretitle{
         padding-top: 60px;
         font-size: 14px;
+        margin: 0;
     }
     &-text{
         font-size: 48px;
+        margin: 0;
+        padding-top: 28px;
     }
     &-link{
+        display: block;
         font-size: 18px;
         cursor: pointer;
         text-decoration: none;
-        color: #fff;
+        color: $white;
+        margin-top: 20px;
     }
     &-wrappertext{
-        color: #fff;
+        color: $white;
         text-align: left;
         padding-left: 80px;
     }
@@ -325,10 +353,50 @@ main{
     }
     &-link{
         display: block;
-        color: #000;    
+        color: $black;    
         text-decoration: none;
         font-size: 18px;
         margin-top: 50px
+    }
+}
+
+.footer{
+    margin-top: 150px;
+    &-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 630px;
+        li{
+            width: 60px;
+            a{
+                text-decoration: none;
+                color: $black;
+            }
+            list-style-type: none;
+        }
+    }
+    &-line{
+        max-height: 1000px;
+        display: block;
+        height: 2px;
+        background: $black;
+        margin-top: 45px;
+    }
+    &-icons{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 310px;
+        margin: 0 auto;
+        padding-top: 56px;
+    }
+    &-icon{
+        width: 34px;
+        height: 34px;
     }
 }
 
